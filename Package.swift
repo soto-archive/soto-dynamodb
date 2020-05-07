@@ -4,6 +4,7 @@ import PackageDescription
 
 let package = Package(
   name: "DynamoDB",
+  platforms: [.iOS(.v12), .tvOS(.v12), .watchOS(.v5)],
   products: [
       .library(name: "DynamoDB", targets: ["DynamoDB"]),
   ],

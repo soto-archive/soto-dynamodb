@@ -8,7 +8,7 @@ let package = Package(
         .library(name: "DynamoDB", targets: ["DynamoDB"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/swift-aws/aws-sdk-swift-core.git", .upToNextMinor(from: "4.6.0"))
+        .package(url: "https://github.com/soto-project/soto-core.git", .upToNextMinor(from: "4.7.0"))
     ],
     targets: [
         .target(name: "DynamoDB", dependencies: ["AWSSDKSwiftCore"], path: "./Sources/DynamoDB"),
